@@ -46,7 +46,7 @@ def main(date, is_sort):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--date', help='YYYYMMDD')
-    parser.add_argument('--sort', type=bool, default=False)
+    parser.add_argument('--sort', action=argparse.BooleanOptionalAction)
 
     args = parser.parse_args()
 
